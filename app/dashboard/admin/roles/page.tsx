@@ -83,7 +83,11 @@ export default function Page() {
             okColor: "bg-green-600 hover:bg-green-700",
         });
         if (!confirmed) return;
-        downloadRolesExcel(roles);
+        const filtered = roles.filter(role => 
+            role.id.toLowerCase().includes(searchQuery.toLowerCase()) || 
+            role.description.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+        downloadRolesExcel(filtered);
     };
 
     if (isPending || !session) {
