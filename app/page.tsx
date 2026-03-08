@@ -75,7 +75,7 @@ export default function LoginPage() {
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-4 font-sans text-gray-900">
             <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-xl shadow-lg border border-gray-100">
                 <div className="text-center">
-                    <h1 className="text-3xl font-bold tracking-tight">BasicApp</h1>
+                    <h1 className="text-3xl font-bold tracking-tight font-sans">Basic App</h1>
                     <p className="text-gray-500 mt-2">Sign in to your account</p>
                 </div>
 
@@ -88,7 +88,7 @@ export default function LoginPage() {
                             autoFocus
                             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none transition-all"
                             type="email" 
-                            placeholder="email@example.com" 
+                            placeholder="alcontin@email.com" 
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             onKeyUp={checkCaps}
