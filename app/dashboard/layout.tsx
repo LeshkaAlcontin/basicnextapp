@@ -20,6 +20,8 @@ interface NavItem {
   className?: string;
 }
 
+//what about using headlessui for dropdowns? it would handle accessibility and keyboard navigation for us, making it more robust and user-friendly. we can still style it to fit our design, but it would save us from having to implement all the dropdown logic ourselves. just a thought! if you want, i can show you how to integrate headlessui into our project for the dropdowns. let me know!
+
 function NavDropdown({ label, Icon, items, isOpen, onToggle }: {
   label: string;
   Icon: LucideIcon;
